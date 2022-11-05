@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Ibn Sina </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css"">
+  <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/1e9NfN5MCral8tpw/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+<a href="html.html"><img src="ibn.png" width="200px">
+</a>
+
+<h1> Станьте нашим клиентом уже сегодня</h1>
+
+<form id="myForm">
+  <label for="name">Ваше имя:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  <label for="surname">Ваша фамилия:</label><br>
+  <input type="text" id="surname" name="surname" required><br>
+  <label for="dob">Дата рождения</label><br>
+  <input type="date" id="dob" name="dob" required><br>
+  <label for="number">Номер телефона</label><br>
+  <input type="tel" id="number" name="number" required><br>
+ <label for="email">Электронная почта</label><br>
+  <input type="email" id="email" name="email" required><br>
+<label for="choice">Тип страхования</label><br>
+  <input type="radio" id="choice" name="choice" required> Полное страхование<br>
+   <input type="radio" id="choice" name="choice" required> Частичное страхование<br><br>
+
+
+</form>
+  <br>
+  <button type="submit" onclick="SubForm()">Записаться</button>
+
+<button><a href="index.html" title="На главную">На главную </button></a>
+</body>
+</html>
