@@ -1,5 +1,15 @@
 {max-width: 100%;
 }
+
+body{
+background-image: url("background.jpg");
+background-color: white;
+maxwidth: 200%;
+justify-content: center;
+background-repeat: none;
+maxwidth: 100%;
+}
+
 .first{
 text-align: left;
 font-weight: 600;
@@ -19,7 +29,7 @@ color: blue;
 border-radius: 5px;
 font-size: 22px;
 float: right;
-margin: 10px;
+margin: 0px 0px 10px 890px;
 padding:5px;
 justify-content: space-evenly;
 align-items: center;
@@ -36,10 +46,6 @@ padding:5px;
 justify-content: space-evenly;
 }
 
-body{
-maxwidth: 100%;
-justify-content: center;
-}
 
 h1{
 text-align: center;
